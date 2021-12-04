@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container" style=" padding-top: 50px; padding-right: 30px; padding-left: 30px;">
+    <div class="jumbotron">
+        <h1 style="font-size:36px">Bölge Bazlı Stok Takip Programı</h1>
+        <p style="font-size:17px">
+            BBSTP nin temel amacı ülkemizin insanlarının gelirlerini dengelemek, arttırmak ve ülkenin ihracını arttırmaktır. Vatandaşlarımız BBSTP sistemine girerek kendisine bir profil oluşturacaktır. Profili oluşturduktan sonra
+            kendi tarlasına ektiği ürünleri sisteme girmesi istenmektedir. İsterse ürün ekmeden önce yaşadığı bölgede hangi türdeki ürünlerin ekildiğini görebilir bunlara dayanarak kendine bir pay çıkartıp
+            kendi tarlasına belirlediği ürünü ekebilir. Bu hizmet tamamen ücretsizdir.
+        </p>
+        <p class="text-right">
+            @if (Session["Checked"] != "true")
+            {
+                <button class="btn btn-sm btn-default"><a href="~/Home/login">Giriş Yap</a></button>
+            }
+            </p>
+    </div>
+</div>
+

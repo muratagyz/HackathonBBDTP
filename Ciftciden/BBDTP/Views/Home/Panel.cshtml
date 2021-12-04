@@ -1,0 +1,437 @@
+﻿@using BBDTP.Models
+@model City
+@{
+    ViewBag.Title = "Panel";
+}
+
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" style="border-radius:0!important" href="#home">Karadeniz</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu1">Akdeniz</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu2">Marmara</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu3">Ege</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu3">İç Anadolu</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu3">Doğu Anadolu</a></li>
+            <li><a data-toggle="pill" style="border-radius:0!important" href="#menu3">Güneydoğu Anadolu</a></li>
+            <li><a href="/Product/Product" class="btn btn-sm">Bölgedeki Ürünleri Kontrol Et</a></li>
+
+            
+        </ul><hr />
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-md-9">
+                        <canvas id="myChart" height="110" style=" margin-bottom: 30px;"></canvas>
+                        <div class="alert alert-info" role="alert">
+                            <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box1">
+                            <h5>Yıl Bazlı Nem Oranı</h5>
+                            <p style="font-size:30px; font-weight:bolder;">
+                                %14
+                            </p>
+                        </div>
+                        <div class="box2">
+                            <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                            <p style="font-size:30px; font-weight:bolder;">
+                                %27
+                            </p>
+                        </div>
+                        <div class="box3">
+                            <h5>Yıl Bazlı Yağış Oranı</h5>
+                            <p style="font-size:30px; font-weight:bolder;">
+                                %49
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart1" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Nem Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %18
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %24
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart2" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-danger" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekemeyeceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Nem Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %40
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %12
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart3" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Nem Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %31
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart4" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Nem Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %31
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart5" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %49
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu6" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart6" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %49
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu7" class="tab-pane fade">
+                <div class="col-md-9">
+                    <canvas id="myChart7" height="110" style=" margin-bottom: 30px;"></canvas>
+                    <div class="alert alert-info" role="alert">
+                        <p>Bu sene elde edilen verilerle ekmek istediğiniz ürünü ekebileceğinize karar verilmiştir.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="box1">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %14
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <h5>Yıl Bazlı Hava Kirliliği Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %27
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <h5>Yıl Bazlı Yağış Oranı</h5>
+                        <p style="font-size:30px; font-weight:bolder;">
+                            %49
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="padding:0;">
+                <div class="main-box clearfix">
+                    <div class="table-responsive">
+                        <table class="table user-list">
+                            <thead>
+                                <tr>
+                                    <th><span>Çiftçi</span></th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="dalgalar">
+                                    <td>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                                        <a href="#" class="user-link">Adı: @Session["Name"]</a>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("demo").innerHTML = year + " YILININ BÖLGE BAZLI HAVA DURUMU BİLGİLERİ";
+</script>
+<script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: JSON.parse('@Html.Raw(Json.Encode(ViewBag.vlRainYear))'),
+            datasets: [{
+            label: 'Yıllara göre yağış yüzdeleri',
+                data: JSON.parse('@Html.Raw(Json.Encode(ViewBag.vlRainQuantity))'),
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart1").getContext('2d');
+    var myChart1 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 25, 17, 48, 24, 15, 57, 15, 24, 45],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+
+
+    var ctx = document.getElementById("myChart2").getContext('2d');
+    var myChart2 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [20, 8, 24, 11, 38, 27, 21, 28, 41, 45, 13, 12, 14],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart3").getContext('2d');
+    var myChart3 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 34, 21, 39, 28, 41, 24, 27, 31,],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart4").getContext('2d');
+    var myChart4 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 34, 21, 39, 28, 41, 24, 13, 18, 24, 41],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart5").getContext('2d');
+    var myChart5 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 34, 21, 39, 28, 41, 24,],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart6").getContext('2d');
+    var myChart6 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 34, 21, 39, 28, 41, 24,],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    var ctx = document.getElementById("myChart7").getContext('2d');
+    var myChart7 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+            datasets: [{
+                label: 'Yıllara göre yağış yüzdeleri',
+                data: [40, 19, 15, 24, 34, 21, 39, 28, 41, 24,],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+
+            }]
+        }
+    });
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+</script>
+<script src="~/wwwroot/chart.js"></script>
+
